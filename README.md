@@ -41,8 +41,8 @@ Add the [accounting](https://www.npmjs.com/package/accounting) package to format
 
 ## Bonus 2
 
-Add an ability to transfer money from one account to the other. Make sure that your clients aren't able to overdraft. Or let them overdraft an give them *protection* aka, charge them a fee. Mwahahahahaha
-![bankers](https://imgflip.com/i/1mow6h)  
+Add an ability to transfer money from one account to the other. Make sure that your clients aren't able to overdraft. Or let them overdraft an give them *protection* aka, charge them a fee. Mwahahahahaha  
+![bankers](https://i.imgflip.com/1mow6h.jpg)  
 
 ## Hints
 - Remember to set a `ref` on the text field for targeting
