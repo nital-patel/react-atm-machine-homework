@@ -1,63 +1,50 @@
-# React TODO app
+# React ATM machine App
 
-![](https://media.giphy.com/media/GuDI9sLsiRNqU/giphy.gif)
+![](https://media.giphy.com/media/3oriePkL53IxK0Aq52/giphy.gif)
 
-Don't leave Neville Longbottom, your newest client, down! He needs your help to create an To-Do List app, so that he can keep track of tasks that need doing.
+Now that we've successfully collaborated with the DSI folks, let's get back to brass tax. And in this case, a luxury tax. You mission today, should you chose to accept it (*spoilers, you have to accept*) is to create one of those new fangled atm machines. Don't forget to use your PIN number
 
-Tonight you are going to be building your first very own React
-application. You need to implement a TODO app, which allows the user
-to create tasks and see a list of the created tasks. Aside from Hello World, the TODO app is one of the most basic ways to begin learning a new framework.
 
 ## Setup
 
-There are no files provided, because you will be building out both the server and the front-end!
+There are no files provided, that's because we're going to use our old friend, tried and true, `create-react-app`. That guy, he takes care of everything doesn't he. I'll be glad when he's dead...
 
-## Completion
+### Learning Objectives
+* React with `create-react-app`
+* Error Handling
 
-There are four parts. Aim to complete the four parts - we'll be revisiting this soon and it would help to be more comfortable.
+### Completion
+Part 1 - 3
 
-## Assignment
+### Part 1
+While there are no setup files, that doesn't mean we shouldn't create some. But good old react let's us reuse components. Let's create an `App.jsx` and and `Account.jsx` and use it twice to pass the props `name`, once for "Checking" and once for Savings.
 
-#### Part 1 - Express Setup
 
-First build a very simple express server which serves one index page
-to which you are able to link static files.
+#### Part 2 `src/Account.js`
+1. Use the property you set in `App.js` and add it to the `<h2>`
+2. Add a `balance` property to `state` and set to 0 initially
+3. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
+4. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance
+  - You should not be able to withdraw more than the current balance
+5. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">` div
 
-#### Part 2 - React Setup
+#### Part 3 - Error Handling
+We can't always count on people using our applications correctly - in fact we should always assume that someone is trying to break our code! Your applications should always have some level of "error handling". Error handling is simply the concept of anticipating different ways that invalid user input could break your application and writing robust code to handle that gracefully.
 
-Include all the libraries that React needs and test that it works by
-writing a simple react view which shows a 'Hello World' message on the
-page. Make sure you understand why we are including each piece, and
-how everything connects together.
-
-#### Part 3 - Layout
-
-It is a good idea to first focus on building a static version of your
-app. Do not worry about holding state or adding interactivity, but
-instead focus on breaking your application into components and
-implementing only the `render` method for those components.
-
-Hardcode an array of tasks and focus on rendering them on the page with
-React. Each task should have some sort of check button, and by default say NOT DONE at some point.
-
-#### Part 4 - Interactivity
-
-Now that you have the components built, implement interactivity.
-
-- Allow the user to create a task by pressing the button in the
-createTask component.
-- Allow the user to mark a task as done (possibly through checking a checkbox).
-- Complete tasks should say DONE instead of NOT DONE.
-
-**Things to consider:**
-- Think about which component will have what state at any time
-- Think about what state you will need to keep in order to successfully implement the interactions
-- Think about what an HTML checkbox looks like, and what data it returns if checked/unchecked
+Try handling these scenarios:
+1. What if a User enters a negative number and clicks **Deposit**
+2. What if a User enters a negative number and clicks **Withdraw**
+3. What if a User enters a string and clicks Deposit or Withdraw?
 
 ## Bonus
+Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
 
-* Implement delete buttons for each task!
-* Give the elements a 'className' attribute for any classes you want to give them for styling (since this is JavaScript, class is a reserved word). E.G:
-  <p className="done">This task is complete!</p>
-  <p className="not-done">This task needs doing...</p>
-* Edit your task-completion function to change classNames appropriately!
+## Bonus 2
+
+Add an ability to transfer money from one account to the other. Make sure that your clients aren't able to overdraft. Or let them overdraft an give them *protection* aka, charge them a fee. Mwahahahahaha
+![bankers](https://imgflip.com/i/1mow6h)  
+
+## Hints
+- Remember to set a `ref` on the text field for targeting
+- The amount entered in the text field will initially be a string, so you'll need to convert that to a number
+- Don't forget to `bind` your click methods!
