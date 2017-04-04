@@ -1,4 +1,4 @@
-## Part 2: Time Keeps on Ticking Ticking Ticking
+# Time Keeps on Ticking Ticking Ticking
 
 ![](https://media.giphy.com/media/RJkPISgueiCMU/giphy.gif)
 
