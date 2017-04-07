@@ -17,7 +17,7 @@ There are no files provided, that's because we're going to use our old friend, t
 Part 1 - 3
 
 ### Part 1
-While there are no setup files, that doesn't mean we shouldn't create some. But good old react let's us reuse components. Let's create an `App.jsx` and and `Account.jsx` and use it twice to pass the props `name`, once for "Checking" and once for Savings.
+While there are no setup files, that doesn't mean we shouldn't create some. But good old react let's us reuse components. Let's create an `App.jsx` and and `Account.jsx` and use it twice to pass the props `name`, once for "Checking" and once for "Savings".
 
 
 #### Part 2 `src/Account.js`
