@@ -7,17 +7,24 @@ Now that we've successfully collaborated with the DSI folks, let's get back to b
 
 ## Setup
 
-There are no files provided, that's because we're going to use our old friend, tried and true, `create-react-app`. That guy, he takes care of everything doesn't he. I'll be glad when he's dead...
+There are no files provided, that's because we're going to use our new friend, `react-slingshot`. This template is a little more involved in its setup than `create-react-app`, but when we start trying to customize, we'll be happy we made the change.  
+
+Use the [slingshot](https://github.com/coryhouse/react-slingshot) guide to set it up if you havn't yet.
+**Main steps**
+- `git clone https://github.com/coryhouse/react-slingshot.git`
+- `npm run setup`
+- `npm start -s`
+- `npm run remove-demo`
 
 ### Learning Objectives
-* React with `create-react-app`
+* React with `slingshot`
 * Error Handling
 
 ### Completion
 Part 1 - 3
 
 ### Part 1
-While there are no setup files, that doesn't mean we shouldn't create some. But good old react let's us reuse components. Let's create an `App.jsx` and and `Account.jsx` and use it twice to pass the props `name`, once for "Checking" and once for "Savings".
+While `slingshot` creates a lot of files for us to use, we should maybe create some others for the HW, especially ones we can reuse. Let's create an `Account.js` and use it twice to pass the props `name`, once for "Checking" and once for "Savings".
 
 
 #### Part 2 `src/Account.js`
@@ -38,11 +45,6 @@ Try handling these scenarios:
 
 ## Bonus
 Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
-
-## Bonus 2
-
-Add an ability to transfer money from one account to the other. Make sure that your clients aren't able to overdraft. Or let them overdraft an give them *protection* aka, charge them a fee. Mwahahahahaha  
-![bankers](https://i.imgflip.com/1mow6h.jpg)  
 
 ## Hints
 - Remember to set a `ref` on the text field for targeting
