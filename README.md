@@ -7,24 +7,15 @@ Now that we've successfully collaborated with the DSI folks, let's get back to b
 
 ## Setup
 
-There are no files provided, that's because we're going to use our new friend, `react-slingshot`. This template is a little more involved in its setup than `create-react-app`, but when we start trying to customize, we'll be happy we made the change.  
+There are no files provided, that's because we're going to use our new friend `create-react-app`.
 
-Use the [slingshot](https://github.com/coryhouse/react-slingshot) guide to set it up if you havn't yet.
-**Main steps**
-- `git clone https://github.com/coryhouse/react-slingshot.git`
-- `npm run setup`
-- `npm start -s`
-- `npm run remove-demo`
-
-### Learning Objectives
-* React with `slingshot`
-* Error Handling
 
 ### Completion
 Part 1 - 3
 
 ### Part 1
-While `slingshot` creates a lot of files for us to use, we should maybe create some others for the HW, especially ones we can reuse. Let's create an `Account.js` and use it twice to pass the props `name`, once for "Checking" and once for "Savings".
+
+Let's create an `Account.js` and use it twice to pass the props `name`, once for "Checking" and once for "Savings".
 
 
 #### Part 2 `src/Account.js`
