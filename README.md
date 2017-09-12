@@ -51,6 +51,7 @@ Try handling these scenarios:
 
 ## Bonus
 Add the [accounting](https://www.npmjs.com/package/accounting) package to format the balance.
+How might you show the total balance from both accounts as an `<h1>` in your `App.js` component?
 
 ## Hints
 - Remember to set a `ref` on the text field for targeting
